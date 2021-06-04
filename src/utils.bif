@@ -1,1 +1,27 @@
+%%{
+#include <cmath>
+%%}
+
+module CNR;
+
+function cpow%(base: count, exp: count %): count
+%{
+   int res = pow(base,exp);
+	
+	return zeek::val_mgr->Count(res);
+%}
+
+function shift_right%(base: count, pos: count %): count
+%{
+	int res = base >> pos;
+
+	return zeek::val_mgr->Count(res);
+%}
+	
+function shift_left%(base: count, pos: count %): count
+%{
+	int res = base << pos;
+
+	return zeek::val_mgr->Count(res);
+%}
 
