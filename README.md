@@ -1,5 +1,6 @@
-# stego-plugin
-Helper functions to process bit-oriented data. The plugin was developed to support <A href="https://github.com/mattereppe/zeek-stego">zeek-stego</A>, but it is rather general and could be used for other projects.
+# chelper-plugin
+
+A plugin that add c-style operators to process bit-oriented data in zeek scripts. The plugin was developed to support <A href="https://github.com/mattereppe/zeek-stego">zeek-stego</A>, but it is rather general and could be used for other projects.
 
 ## cpow(base, exp)
 
